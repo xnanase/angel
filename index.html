@@ -1,0 +1,294 @@
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+ 
+ 
+<style>
+::-webkit-scrollbar-thumb:vertical {
+	display: none;
+}
+ 
+::-webkit-scrollbar-button:horizontal {
+	display: none;
+}
+ 
+::-webkit-scrollbar {
+	display: none;
+}
+ 
+body {
+	background-color: #2b3238;
+     /*---can change color */
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 300;
+	text-align: justify;
+	margin: 0;
+	overflow: hidden;
+}
+ 
+@font-face {
+	font-family: "primetime";
+    src: url('https://dl.dropboxusercontent.com/s/uzoszwd2yfzqmmx/PRIMETIME.ttf');
+}
+ 
+/*---font styles */  
+ 
+ 
+a {
+	color: #fad39a;
+ /*---can change color - links */
+	text-decoration: none;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+ 
+a:hover {
+	color: #1d1d1d;
+	text-decoration: none;
+}
+ 
+p a, .description a {
+	box-shadow: #f7dfd9 0 -2px 0 inset;
+}
+ 
+p a:hover, .description a:hover {
+	box-shadow: #f7dfd9 0 -17px 0 inset;
+} /*---can change color */ 
+ 
+ 
+big, b, strong, bold {
+	color: #cdeaf0;
+ /*---can change color */
+	font-weight: 700;
+}
+ 
+i, em, italic {
+	color: #cc9999;
+ /*---can change color */;
+}
+ 
+s, strike {
+	text-decoration-color: #be1721;
+}
+ 
+small, sub, sup {
+	font-size: 9px;
+	line-height: 14px;
+}
+ 
+h1 {
+	margin: 0;
+	font-weight: 700;
+	color: #747fbd;
+ /*---can change color */
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+}
+ 
+h2 {
+	font-weight: normal;
+	color: #997b63;
+ /*---can change color */
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: 'Poppins', sans-serif;
+	text-align: right;
+	font-weight: 700;
+	margin-top: 2px;
+}
+ 
+.title {
+	font-family: "primetime";
+	-webkit-text-stroke: 1px #28445c;
+ /*---can change color */
+	-webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+	line-height: 100%;
+	font-size: 50px;
+	text-transform: none;
+	font-weight: 700px;
+	letter-spacing: 2px;
+	margin-top: -30px;
+	margin-left: 0;
+	text-align: center;
+	color: #28445c;
+ /*---can change color */
+	z-index: 999999999999999999999;
+	line-height: 80%;
+	position: fixed;
+	width: 650px;
+	letter-spacing: 7px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+ 
+ 
+/*---BODY CONTAINER---- */ 
+#container {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 620px;
+	height: 600px;
+	background-color: #39352c;
+ /*---can change color */
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+	border: .5px solid #444;
+} /*---can change color */ 
+ 
+#contain {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 620px;
+	height: 600px;
+	padding: 0;
+	overflow: visible;
+	background-color: transparent;
+	background: url('https://i.pinimg.com/564x/ea/2b/59/ea2b593714d275a076176d18b54a2b7a.jpg');
+/*---can change URL for background */
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.3;
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}
+ 
+.sidebar {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 360px;
+	height: 580px;
+	background-color: transparent;
+	z-index: 999999;
+}
+ 
+.sidebar-img {
+	position: absolute;
+	z-index: 50;
+	top: -10;
+	left: 40px;
+	width: 250px;
+	height: 590px;
+	background-image: url('https://i.imgur.com/J9etkTO.png');
+ /*---Main IMAGE PNG */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.7;
+}
+ 
+.sidebar-title {
+	position: absolute;
+	z-index: 150;
+	top: 50px;
+	left: 370px;
+	width: 240px;
+	height: 20px;
+	text-align: center;
+	color: #fff;
+ /*---can change color */
+	background-color: #0e1726;
+ /*---can change color */
+	text-transform: lowercase;
+	font-size: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-weight: 700;
+	letter-spacing: 7px;
+	font-family: "primetime";
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+ 
+.sidebar-title span {
+	line-height: 20px;
+	box-shadow: #223756 0 -35px 0 inset;
+/*---can change color */
+	padding: 0 2px;
+	outline: .5px solid #444;
+}/*---can change color */ 
+ 
+.description {
+	position: absolute;
+	z-index: 160;
+	left: 375px;
+	top: 100px;
+	width: 235px;
+	height: 250px;
+	padding-right: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align: justify;
+	font-size: 12px;
+	color: #ddd;
+} /*---can change color */ 
+ 
+ 
+.ooc {
+	position: absolute;
+	z-index: 160;
+	left: 375px;
+	top: 340px;
+	width: 235px;
+	height: 230px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	font-size: 10px;
+	line-height: 15px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgba(14,23,38,0.6);
+ /*---can change color */
+	border: 10px solid #0e1726;
+ /*---can change color */
+	outline: .5px solid #555;
+ /*---can change color */
+	z-index: 999999;
+	color: #ddd;
+} /*---can change color */ 
+ 
+ 
+ 
+#credits {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background: url('https://i.imgur.com/BbhiJbI.png');
+	background-position: center center;
+	background-size: cover;
+}
+ 
+#credits a {
+	border-radius: 50%;
+}
+</style>
+ 
+ 
+<div id="container">
+	<div id="contain"></div>
+	<div class="sidebar">
+		<div class="sidebar-img"></div>
+		<div class="sidebar-title"> <span>SUBTITLE</span></div>
+		<div class="description"> STORY GOES HERE </div>
+	</div>
+	<div class="ooc">
+		<h2>Rules of Engagement</h2> <b>001.</b> Notes
+		<br> <b>002.</b>  Notes
+        <br> <b>003.</b>  Notes
+		<br> <b>004.</b> Coded by <a title="The most wonderful bard in all the lands - and an excellent coder, whatever that is." href="https://roleplay.chat/profile.php?user=Skyy">DIVA</a>.
+		<h2>The Chosen</h2><a title="" href="">FRIEND</a>.<br><a title="" href="">FRIEND</a>.<br><a title="" href="">FRIEND</a>.</div>
+	<div class="title"> CHAR NAME </div>
+</div>
+<!---DO NOT REMOVE! I WILL HUNT YOU DOWN! ---->
+<div id="credits">
+	<a target="_blank" href="https://roleplay.chat/profile.php?user=Diva Codes" title="made by Diva"><img src="https://i.imgur.com/BbhiJbI.png" width="40px" height="40px"></a>
+</div>
